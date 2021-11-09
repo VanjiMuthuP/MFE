@@ -2,16 +2,20 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 14
     commands:      
-      - apt install -y npm
+      - echo Installing source NPM 
+      - npm install -y npm@latest
+      - npm install -g @react/cli
   pre_build:
     commands:
       - echo Installing dependencies...
-      - npm run start
+      - npm install
   build:
     commands:
-      - echo Building...
-      - npm run build
+      - echo Build started...
+      - npm build
 artifacts:
   files:
     - "**/*"
