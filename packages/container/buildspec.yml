@@ -12,8 +12,7 @@ phases:
     commands:
       - echo Build started...
       - npm run build
-artifacts:
-  base-directory: build
+artifacts:  
   files:    
       - "**/*"
   
