@@ -3,11 +3,11 @@ version: 0.2
 phases:
   install:
     commands:      
-      - echo Installing source NPM         
+      - echo Installing source NPM
+      - cd MFE/packages/marketing && npm install
   pre_build:
     commands:
-      - echo Installing dependencies...
-      - npm install
+      - echo Installing dependencies...     
   build:
     commands:
       - echo Build started...
