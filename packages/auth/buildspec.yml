@@ -16,5 +16,5 @@ phases:
 artifacts:
   files:
     - "**/*"
-  discard-paths: yes
-  base-directory: $(echo ${CODEBUILD_INITIATOR} | cut -d'/' -f2)/MFE/packages/dist
+  discard-paths: no
+  base-directory: dist
