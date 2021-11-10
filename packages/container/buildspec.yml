@@ -14,8 +14,7 @@ phases:
       - echo Build started...
       - npm build
 artifacts:
-  files:
-    - appspec.yml
+  files:    
     - build/*
   
   
