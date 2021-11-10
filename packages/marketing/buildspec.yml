@@ -4,7 +4,7 @@ phases:
   install:
     commands:      
       - echo Installing source NPM
-      - cd MFE/packages/marketing && npm install
+      - cd packages/marketing && npm install
   pre_build:
     commands:
       - echo Installing dependencies...     
