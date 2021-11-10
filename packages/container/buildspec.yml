@@ -14,7 +14,8 @@ phases:
       - echo Build started...
       - npm build
 artifacts:
+  base-directory: build
   files:    
       - "**/*"
-  base-directory: build
+  
   
