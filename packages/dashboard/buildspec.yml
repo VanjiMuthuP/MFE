@@ -4,7 +4,7 @@ phases:
   install:
     commands:      
       - echo Installing source NPM
-      - cd packages/dashboard && npm install && npm install chart.js&auto   
+      - cd packages/dashboard && npm install && npm install primevue && npm install chart.js   
   pre_build:
     commands:
       - echo Installing dependencies...     
