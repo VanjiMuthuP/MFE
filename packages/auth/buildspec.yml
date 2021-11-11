@@ -3,18 +3,17 @@ version: 0.2
 phases:
   install:
     commands:      
-      - echo Installing source NPM 
-      - npm install -y npm@latest      
+      - echo Installing source NPM
+      - cd packages/auth && npm install
   pre_build:
     commands:
-      - echo Installing dependencies...
-      - npm install
+      - echo Installing dependencies...     
   build:
     commands:
       - echo Build started...
-      - npm build
+      - npm run build
 artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist
+  base-directory: packages/auth/dist
