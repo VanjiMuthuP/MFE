@@ -1,7 +1,7 @@
 version: 0.2
 env:  
   variables:
-    PRODUCTION_DOMAIN: "https://dbxr4vz2v6ovi.cloudfront.net"    
+    PRODUCTION_DOMAIN: $PRODUCTION_DOMAIN   
 phases:
   install:
     commands:      
