@@ -2,8 +2,10 @@ const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const commonConfig = require('./webpack.common');
 const packageJson = require('../package.json');
-
-const domain = process.env.PRODUCTION_DOMAIN;
+const dotenv = require('dotenv');
+const codeBuildEnv = dotenv.config({ path: `.env` }).parsed;
+    const { PRODUCTION_DOMAIN } = codeBuildEnv
+const domain = PRODUCTION_DOMAIN;
 
 const prodConfig = {
   mode: 'production',
