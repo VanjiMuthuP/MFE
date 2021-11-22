@@ -4,7 +4,7 @@ const commonConfig = require('./webpack.common');
 const packageJson = require('../package.json');
 const dotenv = require('dotenv');
 const codeBuildEnv = dotenv.config({ path: `.env` }).parsed;
-    const { PRODUCTION_DOMAIN } = codeBuildEnv
+   const { PRODUCTION_DOMAIN } = codeBuildEnv
 const domain = PRODUCTION_DOMAIN;
 
 const prodConfig = {
