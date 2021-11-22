@@ -9,6 +9,7 @@ phases:
       - cd packages/container && npm install
   pre_build:
     commands:
+      - printenv > .env
       - echo Installing dependencies...     
   build:
     commands:
