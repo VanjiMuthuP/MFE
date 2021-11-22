@@ -6,7 +6,7 @@ phases:
   install:
     commands:      
       - echo Installing source NPM
-      - cd packages/container && npm install
+      - cd packages/container && npm install && npm install dotenv
   pre_build:
     commands:
       - printenv > .env
